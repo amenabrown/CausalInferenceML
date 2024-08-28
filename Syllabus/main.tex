@@ -1,0 +1,225 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{enumitem} % For custom list formatting
+
+% Define the blue color explicitly
+\definecolor{myblue}{RGB}{0,0,255}
+
+% Set hyperlink color to explicitly defined blue
+\hypersetup{
+    colorlinks=true,
+    linkcolor=myblue,      
+    urlcolor=myblue,
+    citecolor=myblue,
+}
+
+
+
+\title{Causal Inference Using Machine Learning}
+\author{\large Master in Economics \\ Universidad Nacional de Tucumán}
+\date{\large Spring 2024}
+
+\begin{document}
+
+\maketitle
+
+\noindent
+\textbf{Instructor:} Andres Mena (\href{mailto:asmena@face.unt.edu.ar}{asmena@face.unt.edu.ar}) \\[0.5em]
+\textbf{Course Website:} \small \href{http://www.github.io/CausalInferenceML}{\textcolor{myblue}{github.io/CausalInferenceML}}
+\section*{Course Description}
+
+This course provides a graduate-level introduction to the intersection of applied econometric causal inference methodologies and machine learning techniques. The aim is to equip students with the necessary skills to apply causal inference methods to empirical problems in economics research, public policy, and business cases. Topics covered include randomized experiments, regression discontinuity, instrumental variables, differences-in-differences, and synthetic control methods, all of which can be enhanced by machine learning techniques when a high-dimensional set of covariates is available.
+
+\section*{Prerequisites}
+Students should have a background in econometrics, statistical inference, and machine learning. A graduate course in at least two of these three topics is expected.x`'
+
+\section*{Textbooks}
+\begin{itemize}
+    \item \textbf{MHE}: Angrist, Joshua, and Jorn-Steffen Pischke. \textit{Mostly Harmless Econometrics}. Princeton University Press.
+    \item \textbf{CISSB}: Imbens, Guido, and Donald Rubin. \textit{Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction}. Cambridge University Press.
+    \item \textbf{CIML}: Chernozhukov, Victor, et al. \textit{Applied Causal Inference Powered by ML and AI}.
+    \item \textbf{CIMix}: Cunningham, Scott. \textit{Causal Inference: The Mixtape}. Yale University Press.
+\end{itemize}
+
+\section*{Course Schedule}
+
+\vspace{2em}
+\noindent\textbf{Lecture 1:} (10/17): Introduction to Causal Inference \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 1, Chapter 2 pp 11-22
+    \item Holland, P. W. (1986). Statistics and causal inference. \textit{Journal of the American Statistical Association}, 81(396), 945-960.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} -CIMix, Chapter 1 \\
+\hspace{1em} - CISSB, Chapter 1
+
+\vspace{2em}
+\noindent\textbf{Lecture 2:} (10/24): Regression Fundamentals (OLS, CEF) \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 3
+    \item Angrist, J. D., \& Pischke, J. S. (2009). \textit{Mostly harmless econometrics: An empiricist's companion}. Princeton University Press.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Wooldridge, J. M. (2010). \textit{Econometric analysis of cross section and panel data}. MIT Press.
+
+\vspace{2em}
+\noindent\textbf{Lecture 3:} (10/31): Linear Prediction and Inference under High Dimensionality (Lasso, Elastic Net) \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{CIML}, Chapter 2
+    \item Belloni, A., Chernozhukov, V., \& Hansen, C. (2014). High-dimensional methods and inference on structural and treatment effects. \textit{Journal of Economic Perspectives}, 28(2), 29-50.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. \textit{Journal of the Royal Statistical Society: Series B (Methodological)}, 58(1), 267-288. \\
+\hspace{1em} - Zou, H., \& Hastie, T. (2005). Regularization and variable selection via the elastic net. \textit{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}, 67(2), 301-320.
+
+\vspace{2em}
+\noindent\textbf{Lecture 4:} (11/07): Randomized Control Trials \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 2
+    \item Angrist, J. D., Imbens, G. W., \& Rubin, D. B. (1996). Identification of causal effects using instrumental variables. \textit{Journal of the American Statistical Association}, 91(434), 444-455.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Duflo, E., Glennerster, R., \& Kremer, M. (2007). Using randomization in development economics research: A toolkit. \textit{Handbook of Development Economics}, 4, 3895-3962.
+
+\vspace{2em}
+\noindent\textbf{Lecture 5:} (11/14): Randomized Control Trials - Machine Learning \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{CIML}, Chapter 3
+    \item Athey, S., \& Imbens, G. W. (2017). The state of applied econometrics: Causality and policy evaluation. \textit{Journal of Economic Perspectives}, 31(2), 3-32.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Wager, S., \& Athey, S. (2018). Estimation and inference of heterogeneous treatment effects using random forests. \textit{Journal of the American Statistical Association}, 113(523), 1228-1242.
+
+\vspace{2em}
+\noindent\textbf{Lecture 6:} (11/19): Midterm Presentations \\
+
+\vspace{2em}
+\noindent\textbf{Lecture 7:} (11/21): Regression Discontinuity Design \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 4
+    \item Imbens, G. W., \& Lemieux, T. (2008). Regression discontinuity designs: A guide to practice. \textit{Journal of Economic Literature}, 47(1), 1-29.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Cattaneo, M. D., Idrobo, N., \& Titiunik, R. (2019). \textit{A practical introduction to regression discontinuity designs}. Cambridge University Press.
+
+\vspace{2em}
+\noindent\textbf{Lecture 8:} (11/28): Regression Discontinuity - Machine Learning \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{CIML}, Chapter 5
+    \item Lee, D. S., \& Lemieux, T. (2010). Regression discontinuity designs in economics. \textit{Journal of Economic Literature}, 48(2), 281-355.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Chen, X., \& Christensen, T. M. (2020). Optimal learning and testing in regression discontinuity designs. \textit{Econometrica}, 88(2), 547-582.
+
+\vspace{2em}
+\noindent\textbf{Lecture 9:} (12/05): Instrumental Variables I \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 4
+    \item Angrist, J. D., \& Krueger, A. B. (1991). Does compulsory school attendance affect schooling and earnings?. \textit{Quarterly Journal of Economics}, 106(4), 979-1014.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Stock, J. H., \& Yogo, M. (2005). Testing for weak instruments in linear IV regression. \textit{Econometrica}, 73(3), 715-753.
+
+\vspace{2em}
+\noindent\textbf{Lecture 10:} (12/10): Instrumental Variables II \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{CIS}, Chapter 6
+    \item Imbens, G. W., \& Angrist, J. D. (1994). Identification and estimation of local average treatment effects. \textit{Econometrica}, 62(2), 467-475.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Heckman, J. J., \& Vytlacil, E. J. (2005). Structural equations, treatment effects, and econometric policy evaluation. \textit{Econometrica}, 73(3), 669-738.
+
+\vspace{2em}
+\noindent\textbf{Lecture 11:} (12/11): Instrumental Variables - Machine Learning \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{CIML}, Chapter 4
+    \item Belloni, A., Chernozhukov, V., \& Hansen, C. (2014). High-dimensional methods and inference on structural and treatment effects. \textit{Journal of Economic Perspectives}, 28(2), 29-50.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., \& Robins, J. (2017). Double machine learning for treatment and causal parameters. \textit{Econometrica}, 85(1), 53-80.
+
+\vspace{2em}
+\noindent\textbf{Lecture 12:} (12/12): Differences-in-Differences I \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 5
+    \item Card, D., \& Krueger, A. B. (1994). Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania. \textit{American Economic Review}, 84(4), 772-793.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Goodman-Bacon, A. (2021). Difference-in-differences with variation in treatment timing. \textit{Journal of Econometrics}, 225(2), 254-277.
+
+\vspace{2em}
+\noindent\textbf{Lecture 13:} (12/16): Differences-in-Differences II \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{CIML}, Chapter 7
+    \item de Chaisemartin, C., \& D’Haultfoeuille, X. (2020). Two-way fixed effects estimators with heterogeneous treatment effects. \textit{American Economic Review}, 110(9), 2964-2996.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Athey, S., \& Imbens, G. W. (2006). Identification and inference in nonlinear difference-in-differences models. \textit{Econometrica}, 74(2), 431-497.
+
+\vspace{2em}
+\noindent\textbf{Lecture 14:} (12/17): Differences-in-Differences under Staggered Adoption \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 5
+    \item Callaway, B., \& Sant’Anna, P. H. (2021). Difference-in-differences with multiple time periods. \textit{Journal of Econometrics}, 225(2), 200-230.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Sun, L., \& Abraham, S. (2021). Estimating dynamic treatment effects in event studies with heterogeneous treatment effects. \textit{Journal of Econometrics}, 225(2), 175-199.
+
+\vspace{2em}
+\noindent\textbf{Lecture 15:} (12/18): Synthetic Control Methods \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{MHE}, Chapter 6
+    \item Abadie, A., Diamond, A., \& Hainmueller, J. (2010). Synthetic control methods for comparative case studies: Estimating the effect of California's tobacco control program. \textit{American Economic Review}, 105(3), 391-425.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Doudchenko, N., \& Imbens, G. W. (2016). Balancing, regression, difference-in-differences and synthetic control methods: A synthesis. \textit{NBER Working Paper}.
+
+\vspace{2em}
+\noindent\textbf{Lecture 16:} (12/18): Synthetic Control Methods  \\
+\vspace{1em}
+\begin{itemize}
+    \item \textbf{CIML}, Chapter 8
+    \item Arkhangelsky, D., Athey, S., Hirshberg, D. A., Imbens, G. W., \& Wager, S. (2021). Synthetic difference-in-differences. \textit{American Economic Review}, 112(12), 4088-4118.
+\end{itemize}
+\vspace{1em}
+\underline{Additional Readings:} \\
+\hspace{1em} - Doudchenko, N., \& Imbens, G. W. (2016). Balancing, regression, difference-in-differences and synthetic control methods: A synthesis. \textit{NBER Working Paper}.
+
+\vspace{2em}
+\noindent\textbf{Lecture 17:} (12/19): Final Presentations \\
+
+\section*{Grading}
+The final grade will be based on class participation (10\%), a problem set (10\%), a midterm presentation (10\%), a final presentation (30\%), and a research proposal (40\%). 
+\end{document}
