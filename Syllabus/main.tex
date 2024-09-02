@@ -32,10 +32,10 @@
 \textbf{Course Website:} \small \href{http://www.github.io/CausalInferenceML}{\textcolor{myblue}{github.io/CausalInferenceML}}
 \section*{Course Description}
 
-This course provides a graduate-level introduction to the intersection of applied econometric causal inference methodologies and machine learning techniques. The aim is to equip students with the necessary skills to apply causal inference methods to empirical problems in economics research, public policy, and business cases. Topics covered include randomized experiments, regression discontinuity, instrumental variables, differences-in-differences, and synthetic control methods, all of which can be enhanced by machine learning techniques when a high-dimensional set of covariates is available.
+This graduate-level course introduces the intersection of applied econometrics and machine learning techniques. It aims to equip students with essential tools for conducting causal inference in empirical research, public policy analysis, and business case studies. The course covers topics such as randomized experiments, regression discontinuity, instrumental variables, differences-in-differences, and synthetic control methods. A particular focus is on how machine learning and AI techniques can enhance these methods in high-dimensional settings by using statistical learners to estimate and infer low-dimensional causal effects.
 
 \section*{Prerequisites}
-Students should have a background in econometrics, statistical inference, and machine learning. A graduate course in at least two of these three topics is expected.x`'
+Students should have a background in econometrics, statistical inference, and machine learning. A graduate course in at least two of these three topics is expected. Students should also be familiar with programming in R or Python.
 
 \section*{Textbooks}
 \begin{itemize}
@@ -48,39 +48,46 @@ Students should have a background in econometrics, statistical inference, and ma
 \section*{Course Schedule}
 
 \vspace{2em}
-\noindent\textbf{Lecture 1:} (10/17): Introduction to Causal Inference \\
+\noindent\textbf{Lecture 1 (10/17):} \textbf{Introduction to Causal Inference} Potential Outcomes, Fundamental Problem of Causal Inference, Assignment Mechanisms, Selection Bias, Average Treatment Effect. \\
 \vspace{1em}
 \begin{itemize}
     \item \textbf{MHE}, Chapter 1, Chapter 2 pp 11-22
-    \item Holland, P. W. (1986). Statistics and causal inference. \textit{Journal of the American Statistical Association}, 81(396), 945-960.
+    \item  \textbf{CISSB}, Chapter 1 \\
 \end{itemize}
 \vspace{1em}
 \underline{Additional Readings:} \\
-\hspace{1em} -CIMix, Chapter 1 \\
-\hspace{1em} - CISSB, Chapter 1
+\hspace{1em} - \textbf{CIMix}, Chapter 1 \\
+\hspace{1em} - \textbf{CISSB}, Chapter 2 \\
+\hspace{1em} - Holland, P. W. (1986). Statistics and causal inference. \textit{Journal of the American Statistical Association}, 81(396), 945-960.\\
+\hspace{1em} - Rambachan, A. (2018). Harvard Economics Math Camp 2018: Econometrics, Probability Review. \textit{Lecture Notes}.
 
 \vspace{2em}
-\noindent\textbf{Lecture 2:} (10/24): Regression Fundamentals (OLS, CEF) \\
+\noindent\textbf{Lecture 2 (10/24) :}  \textbf{Regression Fundamentals}: Conditional Expectation Function, OLS, Inference in regression, Causal Regression.\\
 \vspace{1em}
 \begin{itemize}
-    \item \textbf{MHE}, Chapter 3
-    \item Angrist, J. D., \& Pischke, J. S. (2009). \textit{Mostly harmless econometrics: An empiricist's companion}. Princeton University Press.
+    \item \textbf{MHE}, Chapter 3 pp 27-64
+    \item \textbf{CIML}, Chapter 1 pp 13-26
 \end{itemize}
-\vspace{1em}
+
 \underline{Additional Readings:} \\
-\hspace{1em} - Wooldridge, J. M. (2010). \textit{Econometric analysis of cross section and panel data}. MIT Press.
+\vspace{1em} - \textbf{CIMix}, Chapter 2, pp 39-95 \\
+\hspace{1em} - Bruce E. Hansen. Econometrics. Princeton University Press. pp 14-57
 
 \vspace{2em}
-\noindent\textbf{Lecture 3:} (10/31): Linear Prediction and Inference under High Dimensionality (Lasso, Elastic Net) \\
+\noindent\textbf{Lecture 3 (10/31): } \textbf{High-Dimensional
+Regression}: LASSO, Elastic-Net, Frisch-Waugh-
+Lovell partialling-out, Partially Linear Regression, Inference under High Dimensionality  \\
 \vspace{1em}
 \begin{itemize}
-    \item \textbf{CIML}, Chapter 2
-    \item Belloni, A., Chernozhukov, V., \& Hansen, C. (2014). High-dimensional methods and inference on structural and treatment effects. \textit{Journal of Economic Perspectives}, 28(2), 29-50.
+    \item \textbf{CIML}, Chapter 3
+    \item Hastie, Tibshirani, \& Friedman. The Elements of Statistical Learning. Springer. pp 61-73
 \end{itemize}
 \vspace{1em}
 \underline{Additional Readings:} \\
 \hspace{1em} - Tibshirani, R. (1996). Regression shrinkage and selection via the lasso. \textit{Journal of the Royal Statistical Society: Series B (Methodological)}, 58(1), 267-288. \\
 \hspace{1em} - Zou, H., \& Hastie, T. (2005). Regularization and variable selection via the elastic net. \textit{Journal of the Royal Statistical Society: Series B (Statistical Methodology)}, 67(2), 301-320.
+
+\hspace{1em} - Belloni, A., Chernozhukov, V., \& Hansen, C. (2014). High-dimensional methods and inference on structural and treatment effects. \textit{Journal of Economic Perspectives}, 28(2), 29-50.
 
 \vspace{2em}
 \noindent\textbf{Lecture 4:} (11/07): Randomized Control Trials \\
